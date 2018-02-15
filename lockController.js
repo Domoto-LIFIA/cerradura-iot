@@ -51,5 +51,7 @@ module.exports = class LockController {
       console.error(err);
     }
 
-  };
-  
+	_statusChange(status) {
+    	this._isOpen = status.isOpen;
+	}
+ };
