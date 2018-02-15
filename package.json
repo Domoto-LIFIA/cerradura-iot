@@ -1,6 +1,6 @@
 {
   "name": "cerradura-iot",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Cerradura IoT",
   "main": "domotoLock.js",
   "bin": {
