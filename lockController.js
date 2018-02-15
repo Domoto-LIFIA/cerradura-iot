@@ -31,8 +31,7 @@ module.exports = class LockController {
     }
   
     set disabled(value) {
-      this._temperatures.forEach(input => { input.disabled = value; });
-      this._time.disabled = value;
+      //
     }
   
     open() {
