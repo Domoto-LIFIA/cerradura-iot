@@ -1,22 +1,18 @@
 {
-  "name": "domoto-mia-cucina",
-  "version": "1.1.0",
-  "description": "Plugin para la aplicación de domoto",
-  "main": "domotoMiaCucina.js",
+  "name": "cerradura-iot",
+  "version": "1.0.0",
+  "description": "Cerradura IoT",
+  "main": "domotoLock.js",
   "bin": {
-    "domoto": "domotoMiaCucina.js"
+    "domoto": "domotoLock.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@gitlab.com/jloboprs/domoto-mia-cucina.git"
-  },
-  "keywords": [ "domotica", "domoto", "domoto-extension" ],
-  "author": "José Lobo",
+  "keywords": [
+    "domotica",
+    "domoto",
+    "domoto-extension"
+  ],
+  "author": "Franco Fico",
   "license": "ISC",
-  "bugs": {
-    "url": "https://gitlab.com/jloboprs/domoto-mia-cucina/issues"
-  },
-  "homepage": "https://gitlab.com/jloboprs/domoto-mia-cucina#README",
   "dependencies": {
     "domoto": "^1.1.0",
     "socket.io-client": "^1.4.8"
