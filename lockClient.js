@@ -1,7 +1,7 @@
 const io = require('socket.io-client');
 
 module.exports = class LockClient {
-  constructor(url = 'http://mia-cucina.herokuapp.com') {
+  constructor(url = 'http://cerradura-iot.herokuapp.com') {
     this.url = url;
     this._socket = io(url);
   }

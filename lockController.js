@@ -23,16 +23,16 @@ module.exports = class LockController {
       this._itemMenu.iconOn = value;
       this._open.checked = value;
       //this._iconFire.innerText = value ? 'whatshot' : '';
-      this.disabled = this.disabled;
+      //this.disabled = this.disabled;
     }
   
-    get disabled() {
+    /*get disabled() {
       return this.isOpen;
     }
   
     set disabled(value) {
       //
-    }
+    }*/
   
     open() {
       this._client.open();
