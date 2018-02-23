@@ -1,12 +1,12 @@
+var onoff = require('onoff').Gpio;
+var LED = new Gpio(4, 'out');
+
 module.exports = class LockController {
     constructor(view, itemMenu, lockClient) {
-      //this._temperatures = null;
+
       this._itemMenu = itemMenu;
       this._client = lockClient;
-      //this._time = view.querySelector('#tiempo');
       this._open = view.querySelector('#abrir');
-      //this._temperatures = [view.querySelector('#high'),
-        //view.querySelector('#medium'), view.querySelector('#low')];
   
       const header = view.querySelector('.card-content');
      
@@ -22,24 +22,17 @@ module.exports = class LockController {
     set _isOpen(value) {
       this._itemMenu.iconOn = value;
       this._open.checked = value;
-      //this._iconFire.innerText = value ? 'whatshot' : '';
-      //this.disabled = this.disabled;
     }
   
-    /*get disabled() {
-      return this.isOpen;
-    }
-  
-    set disabled(value) {
-      //
-    }*/
   
     open() {
       this._client.open();
+	LED.writeSync(1);
     }
   
     close() {
       this._client.close();
+	LED.writeSync(0);
     }
   
     toggleOpen() {
