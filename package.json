@@ -1,6 +1,6 @@
 {
   "name": "cerradura-iot",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Cerradura IoT",
   "main": "domotoLock.js",
   "bin": {
@@ -16,6 +16,6 @@
   "dependencies": {
     "domoto": "^1.1.0",
     "socket.io-client": "^1.4.8",
- 	"onoff":"^1.2.0" 
-	}
+    "onoff": "^1.2.0"
+  }
 }
