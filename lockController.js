@@ -1,5 +1,5 @@
-const Gpio = require('onoff').Gpio;
-var LED = new Gpio(4, 'out');
+var Gpio = require('onoff').Gpio,
+//LED = new Gpio(17, 'out');
 
 module.exports = class LockController {
     constructor(view, itemMenu, lockClient) {
@@ -13,7 +13,9 @@ module.exports = class LockController {
       this._client.on('status', status => this._statusChange(status));
       this._client.on('error', err => this._connectionError(err));
       this._open.addEventListener('click', e => this.toggleOpen(e));
-    }
+		
+			this._LED = new Gpio(17,'out');
+  }
   
     get isOpen() {
       return this._open.checked;
@@ -27,12 +29,12 @@ module.exports = class LockController {
   
     open() {
       this._client.open();
-	LED.writeSync(1);
+			this._LED.writeSync(1);
     }
   
     close() {
       this._client.close();
-	LED.writeSync(0);
+			LED.writeSync(0);
     }
   
     toggleOpen() {
