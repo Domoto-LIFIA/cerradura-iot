@@ -1,4 +1,4 @@
-var onoff = require('onoff').Gpio;
+const Gpio = require('onoff').Gpio;
 var LED = new Gpio(4, 'out');
 
 module.exports = class LockController {
