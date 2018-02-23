@@ -5,7 +5,7 @@ const viewPath = require('path').resolve(__dirname, './view.html');
 
 module.exports = class DomotoLock extends Domoto {
   constructor() {
-    super('cerraduraIoT');
+    super('cerradura-iot');
 
     this.description = 'Cerradura IoT';
     const lock = new LockClient();
