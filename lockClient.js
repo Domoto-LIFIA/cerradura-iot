@@ -14,7 +14,7 @@ module.exports = class LockClient {
   }
 
   open() {
-	LED.writeSyn(1);
+	LED.writeSync(1);
     return $.ajax({
       url: this._getUrl('/api/open'),
       method: 'POST',
@@ -23,7 +23,7 @@ module.exports = class LockClient {
   }
 
   close() {
-	LED.writeSyn(0);
+	LED.writeSync(0);
     return $.ajax({
       url: this._getUrl('/api/close'),
       method: 'POST',
