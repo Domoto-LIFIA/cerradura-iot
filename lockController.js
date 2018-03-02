@@ -1,5 +1,4 @@
 const GPIO = require('../onoff').Gpio;
-var LED = new GPIO(17,'out');
 
 module.exports = class LockController {
     constructor(view, itemMenu, lockClient) {
