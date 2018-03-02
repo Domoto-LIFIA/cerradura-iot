@@ -1,5 +1,3 @@
-const GPIO = require('../onoff').Gpio;
-
 module.exports = class LockController {
     constructor(view, itemMenu, lockClient) {
 
