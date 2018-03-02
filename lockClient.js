@@ -5,7 +5,7 @@ module.exports = class LockClient {
   constructor(url = 'http://cerradura-iot.herokuapp.com') {
     this.url = url;
     this._socket = io(url);
-	this._led = GPIO(17,'out');
+//	this._led = GPIO(17,'out');
   }
 
   on(event, listener) {
