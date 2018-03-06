@@ -1,5 +1,5 @@
 const io = require('socket.io-client');
-const GPIO = require('onoff');
+const onoff = require('onoff');
 
 module.exports = class LockClient {
   constructor(url = 'http://cerradura-iot.herokuapp.com') {
