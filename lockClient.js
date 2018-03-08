@@ -1,11 +1,9 @@
 const io = require('socket.io-client');
-const onoff = require('onoff');
 
 module.exports = class LockClient {
   constructor(url = 'http://cerradura-iot.herokuapp.com') {
     this.url = url;
     this._socket = io(url);
-//	this._led = GPIO(17,'out');
   }
 
   on(event, listener) {
@@ -13,8 +11,6 @@ module.exports = class LockClient {
   }
 
   open() {
-	//this._led.writeSync(1);
-	//LED.writeSync(1);
     return $.ajax({
       url: this._getUrl('/api/open'),
       method: 'POST',
@@ -23,7 +19,6 @@ module.exports = class LockClient {
   }
 
   close() {
-	//LED.writeSync(0);
     return $.ajax({
       url: this._getUrl('/api/close'),
       method: 'POST',

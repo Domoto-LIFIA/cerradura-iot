@@ -25,12 +25,10 @@ module.exports = class LockController {
   
     open() {
 		this._client.open();
-		//LED.writeSync(1);
     }
   
     close() {
 		this._client.close();
-		//LED.writeSync(0);
     }
   
     toggleOpen() {
