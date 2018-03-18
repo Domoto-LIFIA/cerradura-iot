@@ -1,0 +1,21 @@
+{
+  "name": "cerradura-iot",
+  "version": "2.3.13",
+  "description": "Cerradura IoT",
+  "main": "domotoLock.js",
+  "bin": {
+    "domoto": "domotoLock.js"
+  },
+  "keywords": [
+    "domotica",
+    "domoto",
+    "domoto-extension"
+  ],
+  "author": "LIFIA",
+  "license": "ISC",
+  "dependencies": {
+    "domoto": "^1.1.0",
+    "socket.io-client": "^1.4.8",
+    "onoff": "^2.0.0"
+  }
+}

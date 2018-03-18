@@ -1,2 +1,2 @@
-# cerradura-iot
-Elemento Inteligente diseñado para el software de Domoto- LIFIA
+# Domoto Cerradura IoT
+Extensión para Domoto que controla una cerradura inteligente.
